@@ -1,5 +1,5 @@
-#small array test case
-
+# small array test case
+print("small array test case:")
 testarr = [
             ['B', 'G', 'Y', 'G'],
             ['B', 'G', 'Y', 'G'],
@@ -8,6 +8,6 @@ testarr = [
         ]
 startx = 3
 starty = 1
-replacment = "B"
-
-hw1(testarr,startx,starty,replacment)
+replacment = 'B'
+label = 'G'
+HW1(testarr, startx, starty, label, replacment)

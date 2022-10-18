@@ -1,5 +1,5 @@
-#simple array test case
-
+# simple array test case
+print("simple array test case:")
 testarr = [
             ['G', 'G', 'G', 'G'],
             ['G', 'G', 'G', 'G'],
@@ -8,6 +8,6 @@ testarr = [
         ]
 startx = 1
 starty = 1
-replacment = "B"
-
-hw1(testarr,startx,starty,replacment)
+target = 'G'
+replacment = 'B'
+HW1(testarr, startx, starty, target, replacment)
