@@ -1,0 +1,19 @@
+#large simple array test case
+
+testarr = [
+            ['G', 'G', 'G', 'G','G', 'G', 'G', 'G','G'],
+            ['G', 'G', 'G', 'G','G', 'G', 'G', 'G','G'],
+            ['G', 'G', 'G', 'G','G', 'G', 'G', 'G','G'],
+            ['G', 'G', 'G', 'G','G', 'G', 'G', 'G','G'],
+            ['G', 'G', 'G', 'G','G', 'G', 'G', 'G','G'],
+            ['G', 'G', 'G', 'G','G', 'G', 'G', 'G','G'],
+            ['G', 'G', 'G', 'G','G', 'G', 'G', 'G','G'],
+            ['G', 'G', 'G', 'G','G', 'G', 'G', 'G','G'],
+            ['G', 'G', 'G', 'G','G', 'G', 'G', 'G','G']
+        ]
+
+startx = 1
+starty = 1
+replacment = "B"
+
+hw1(testarr,startx,starty,replacment)

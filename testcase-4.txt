@@ -1,0 +1,13 @@
+#small array test case
+
+testarr = [
+            ['B', 'G', 'Y', 'G'],
+            ['B', 'G', 'Y', 'G'],
+            ['B', 'G', 'Y', 'G'],
+            ['B', 'G', 'Y', 'G']
+        ]
+startx = 3
+starty = 1
+replacment = "B"
+
+hw1(testarr,startx,starty,replacment)
