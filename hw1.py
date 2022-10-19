@@ -7,8 +7,17 @@ def printaarr(a):
 def HW1(twodarr, startx, starty, targetcolor, replacmentcolor):
     print("input array:")
     printaarr(twodarr)
-    print("outputarray:")
-    printaarr(twodarr)
+    # base case: empty array
+    if (len(twodarr) == 0):
+        return
+    # edge case: target color same as replacment color
+    elif(twodarr[startx:starty] == replacmentcolor):
+        return
+    else:
+        # Change color of target index
+        # Check if surrounding indices same color and reachable from target
+        print("outputarray:")
+        printaarr(twodarr)
 
 def main():
     # read in test files here then run them
