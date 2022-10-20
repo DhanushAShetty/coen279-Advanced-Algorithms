@@ -1,6 +1,22 @@
 #!/usr/bin/python
 from collections import deque
 
+# function to print input and output arrays
+def print_arr(arr):
+    try:
+        printlist = []
+        j = 0
+        for i in range(len(arr)):
+            for j in range(len(arr)):
+                printlist += arr[i][j]
+            if j != 0:   # edge case when only one row/column
+                print(printlist)
+            else:
+                print(arr)
+            printlist = []
+    except IndexError:
+        print(arr)
+
 
 def print_answer(solution):
     total_modified = 0
@@ -30,11 +46,15 @@ def is_safe(mat, x, y, target):
 
 
 def flood_fill(twodarr, start_x, start_y, target_color, replacement_color):
+    print('\n Changing ', target_color, 'to', replacement_color, ' in Input Array:')
+    print_arr(twodarr)
     solution = {}
-
+    # base case: empty array
+    if len(twodarr) == 0:
+        print("Empty Array Case")
     # Change color of target index
     # Check if surrounding indices same color and reachable from target
-    if len(twodarr) != 0 and twodarr[start_x][start_y] == target_color:
+    elif twodarr[start_x][start_y] == target_color:
 
         # create a queue and enqueue starting pixel
         q = deque()
@@ -62,6 +82,8 @@ def flood_fill(twodarr, start_x, start_y, target_color, replacement_color):
                     q.append((x + row[k], y + col[k]))
 
     print_answer(solution)
+    print('Output Array:')
+    print_arr(twodarr)
 
 
 def main():
@@ -71,6 +93,9 @@ def main():
     exec(open('testcase3.py').read())
     exec(open('testcase4.py').read())
     exec(open('testcase5.py').read())
+    exec(open('testcase6.py').read())
+    exec(open('testcase7.py').read())
+    exec(open('testcase8.py').read())
 
 
 if __name__ == "__main__":

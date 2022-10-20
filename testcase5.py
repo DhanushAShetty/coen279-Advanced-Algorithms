@@ -1,7 +1,6 @@
 # large simple array test case
 from hw1 import flood_fill
 
-print("large simple array test case:")
 test_arr = [
             ['G', 'G', 'G', 'G', 'G', 'G', 'G', 'G', 'G'],
             ['G', 'G', 'G', 'G', 'G', 'G', 'G', 'G', 'G'],
