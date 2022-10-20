@@ -1,6 +1,7 @@
 # very large 9x10 array test case
-print("very large 9x10 array test case:")
-testarr = [
+from hw1 import flood_fill
+
+test_arr = [
             ['B', 'B', 'B', 'R', 'R', 'R', 'R', 'R', 'R', 'B', 'B', 'B',
              'R', 'R',  'R', 'R', 'R', 'R'],
             ['B', 'B', 'B', 'B', 'R', 'R', 'X', 'X', 'X', 'B', 'B', 'B',
@@ -20,8 +21,8 @@ testarr = [
             ['Y', 'G', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'B', 'B', 'B',
              'R', 'R',  'R', 'R', 'R', 'R']
         ]
-startx = 8
-starty = 8
-replacment = 'Y'
-label = 'X'
-HW1(testarr, startx, starty, label, replacment)
+start_x = 8
+start_y = 8
+replacement = 'Y'
+target = 'X'
+flood_fill(test_arr, start_x, start_y, target, replacement)

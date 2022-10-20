@@ -1,13 +1,14 @@
 # simple array test case
-print("simple array test case:")
-testarr = [
+from hw1 import flood_fill
+
+test_arr = [
             ['G', 'G', 'G', 'G'],
             ['G', 'G', 'G', 'G'],
-            ['G', 'G', 'G', 'G'],
-            ['G', 'G', 'G', 'G']
+            ['Y', 'G', 'G', 'G'],
+            ['R', 'G', 'G', 'G']
         ]
-startx = 1
-starty = 1
+start_x = 1
+start_y = 1
 target = 'G'
-replacment = 'B'
-HW1(testarr, startx, starty, target, replacment)
+replacement = 'B'
+flood_fill(test_arr, start_x, start_y, target, replacement)
