@@ -12,6 +12,7 @@ List of cell locations modified:
 
 Number of cells modified: 14
 Output Array:
+
 ['B', 'B', 'B', 'B']
 ['B', 'B', 'B', 'B']
 ['Y', 'B', 'B', 'B']
